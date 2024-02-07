@@ -1,0 +1,28 @@
+
+void main() {
+  int marks=70;
+  
+  //marks
+  //75 or high - A
+  //65-75 - B
+  //55-65 - C
+  //35-55 - S
+  //35 or low - F
+  
+  if(marks>=75){
+    print("You have a A pass");
+  }
+ else if(marks<75 && marks>=65){
+    print("You have a B pass");
+  }
+  else if(marks<65 && marks>=55){
+    print("You have a C pass");
+  }
+  else if(marks<55 && marks>=35){
+    print("You have a S pass");
+  }
+  else{
+    print("You have a F pass");
+  }
+
+}
