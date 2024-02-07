@@ -1,0 +1,16 @@
+void main() {
+    
+  int age=20;
+  bool id=true;
+  
+  if((age>0 && age<13) && !id){
+      print("You are a teenager.");
+  }
+  else if((age>=18 && age<=40) && id){
+    print("You are a youngest.");
+  }
+  else{
+    print("You are a oldest.");
+  }
+  
+}
