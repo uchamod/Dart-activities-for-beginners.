@@ -1,0 +1,26 @@
+void main() {
+ 
+  String month="Aug";
+  bool validity=true;
+  
+  if(validity){
+    
+      if(month=="jan" || month=="feb" || month=="march"){
+        print('This is Spring');
+      }
+      else if(month=="Apr" || month=="May" || month=="Jun"){
+        print('This is Summer');
+      }
+      else if(month=="July" || month=="Aug" || month=="Sep"){
+        print('This is Otter');
+      }
+     else {
+        print('This is Winter');
+      }
+    
+  }
+  else{
+    print("Month is not valid!");
+  }
+  
+}
