@@ -1,0 +1,44 @@
+void main() {
+  
+  //first 
+  List<dynamic> myList=[1,2,"Sam",13.33,100];
+  
+  myList.add(200);//add ele
+  myList.insert(0,"Start");//insert elemant as index 0
+  myList.remove(13);//remove specific elemant
+  myList.removeAt(3);//remove index 3 
+  print(myList.length);
+  print(myList);
+  
+  //second
+  
+  List<dynamic> myListTwo=[1,2,3,4,5,6,7,8];
+   myListTwo.removeRange(1,3);//remove elemants index between 1 & 3
+   myListTwo.addAll([9,10]);//add more than one elemants at once
+   myListTwo.insertAll(1,[9,10]);//add more than one elemant for specific point
+   myListTwo.indexOf(9);//get the index
+   myListTwo.clear();//clear all the elemant of list
+   
+  //third
+  
+    List<dynamic> myListThree=[1,2,3,4,5,6,7,8];
+    print(myListThree.contains(1));//check the value is include in the list 
+    print(myListThree.join("-")); //covert whole list to string and join using - mark
+    print(myListThree.map((ele) => ele%2).toList());//map all the elemant for same function
+  
+    myListThree.forEach( (num) => print(num*3));//operate a same function for all the elemants
+  
+    myListThree.sort();//sort the elemants in assending order/alphebetical order
+  
+   //fourth
+  
+     List<dynamic> myListFour=[1,2,3,4,5,6,7,8];
+     String name="Taylor Alicen Swift";
+     print(name.split(" "));//split the String using some spec & return as List
+     
+     print(myListFour.any((ele) => ele.isOdd));//check the at least one  list elemants are stisfied give function.
+     print(myListFour.every((ele) => ele.isOdd));//check the all list elemants are stisfied give function
+      print(myListFour.where((ele) => ele.isOdd));//return the elemants where stisfy the given function
+     myListFour.shuffle();//shuffle list randomly 
+  
+}  
