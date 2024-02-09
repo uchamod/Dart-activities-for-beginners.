@@ -1,0 +1,60 @@
+void main() {
+ 
+  //switch case 1
+  final day="Monday";
+  
+  switch(day){
+      
+      case "Monday":
+        print("Today is $day");
+        break;
+      
+      case "Tuseday":
+        print("Today is $day");
+        break;
+      
+      case "Wednesday":
+        print("Today is $day");
+        break;
+      
+      case "Turesday":
+        print("Today is $day");
+        break;
+      
+      case "Friday":
+        print("Today is $day");
+        break;
+      
+      default:
+        print("Today is not a workday");
+        break;
+      
+  }
+  
+    //switch case 2
+   dynamic data="john";
+  
+  switch(data.runtimeType){
+      
+      case int:
+        print("data type is int");
+        break;
+      
+      case double:
+        print("data type is double");
+        break;
+      
+      case String:
+        print("data type is String");
+        break;
+      
+      default:
+        print("data type is not recognize");
+        break;
+      
+        
+      
+  }
+  
+  } 
+  
