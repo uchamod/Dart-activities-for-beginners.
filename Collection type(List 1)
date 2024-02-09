@@ -1,0 +1,25 @@
+void main() {
+ 
+  //Lists of dart
+  //  List <Type> Listname=[data];
+  
+  List <int> intList=[1,2,3,4,5];//can only initilize int values.
+  print(intList);
+  
+    
+  List <dynamic> myList=[1,"chamod",23.5,true];//can initilize any values.Because the type is dynamic.
+  print(myList);
+  
+  //phaps we can create constant Lists 
+  const nums=[1,3,"String",7,9];
+  print(nums.runtimeType);
+  
+  dynamic elemants=[1990,false,34.67,"hello"];
+  print(elemants);
+  
+  //acsses the data (acsses data using indexes)
+  print(intList[0]);
+  print(myList[1]);
+  print(elemants[2]);
+  
+  }
