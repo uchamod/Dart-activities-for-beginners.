@@ -1,0 +1,16 @@
+void main() {
+ 
+    int age=20;
+  
+    //if-else solution 
+    if(age >= 18){
+      print("You are an adult");
+    }else{
+      print("You are not an adult");
+    }
+  
+    //Ternary solution;(condition ? True : False)
+    
+    age>=18 ?  print("You are an adult") :  print("You are not an adult");
+  } 
+  
