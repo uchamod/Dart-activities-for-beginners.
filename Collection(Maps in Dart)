@@ -1,0 +1,40 @@
+void main() {
+  
+  //Map< Key datatype,Value datatype> name={key:value pairs};
+  
+   Map<String,int> marks={"jhon":60,"max":55,"donald":80,"danial":56};
+   print(marks);
+  
+   Map<dynamic,int> id={100:30,"hough":30,"dan":45};
+  
+   print(marks["max"]);//get the value
+  
+   marks["jhon"]=55;//change the value
+  
+   print(marks);
+  
+  //Map methods
+  
+   Map<dynamic,dynamic> store={"jhon":60,"max":55,"donald":80,"danial":56};
+   print(store.length);//get the length
+   store["sam"]=70;//add pair
+   store.addAll({"rose":45,"jane":73,"lisa":90});//add more than one pair
+   store.remove("max");//remove pair
+  
+   print(store.containsKey("donald"));//check key
+   print(store.containsValue(80));//check value
+  
+   store.forEach((key,value) => print("$key has ${value/100} points"));
+  
+   print(store.keys);//get all the keys
+   print(store.values);//get all the values
+  
+   store.putIfAbsent("charliz",() => 60);//add the pair the if the current pair does't exist
+   print(store);
+  
+   store.update("jhon",(value) => 45); //update the value
+   store.updateAll((key,value) => 0.0);//update all the values
+  print(store);
+  
+   
+}
