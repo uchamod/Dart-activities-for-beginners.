@@ -1,0 +1,36 @@
+void main() {
+  //while loop in dart
+
+  //EX1
+  String name = "John de Silva";
+
+  int x = 0;
+
+  while (x < name.length) {
+    print("${name[x]} is $x");
+    x++;
+  }
+
+  //EX2
+  Map<String, int> map = {"doc": 50, "tec": 30, "spy": 20};
+
+  int y = 0;
+  while (y < map.length) {
+    print(map[map.keys.elementAt(y)]);
+  }
+
+  //EX3
+  List<int> even = [];
+  List<int> odd = [];
+
+  int a = 0;
+  while (a <= 100) {
+    if (a % 2 == 0)
+      even.add(a);
+    else
+      odd.add(a);
+  }
+
+  print(even);
+  print(odd);
+}
