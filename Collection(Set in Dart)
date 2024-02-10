@@ -1,0 +1,43 @@
+void main() {
+  
+  //sets of dart
+  Set <int> mySet1={1,2,3,4,5};
+  print(mySet1);
+  
+  Set <String> mySet2={"jhon","mike","danial"};
+  print(mySet2.runtimeType);
+  
+  Set <dynamic> mySet3={6,7,"dion","lee",23.34,false};
+  print(mySet3);
+  
+  print(mySet1.elementAt(1));//get the elemant of set
+  print(mySet2.first);//get the first elemant
+  print(mySet3.last);//get the last elemant
+  
+  
+  
+  //other methods
+  Set <dynamic> mySet4={6,7,"dion","lee",23.34,false};
+  mySet4.add(5);//add elemant to last
+  mySet4.addAll({10,11});//add multiple elemants
+  mySet4.remove("lee");//remove elemants
+  mySet4.removeAll({6,7});//remove multiple elemants
+  print(mySet4.contains(5));//check elemants
+  
+  
+  Set<int> mySet5={3,5,7,9};
+  Set<int> mySet6={1,3,5,7,9,11};
+  
+  print(mySet5.difference(mySet6));//get the elemant only have mySet5
+  
+  print(mySet5.intersection(mySet6));//get common elemants
+  print(mySet5.union(mySet6));//get union of two set
+
+
+  mySet5.forEach((ele) => print(ele*2));
+  print(mySet6.isEmpty);//check is set empty
+  
+  
+  
+  
+}
