@@ -1,0 +1,30 @@
+void main() {
+  //Conversation between different collection
+
+  Map<String, int> map = {"dan": 1, "sort": 2, "jane": 3};
+  print(map);
+
+  List<String> list = map.keys.toList();
+  print(list);
+
+  Set<int> set = map.values.toSet();
+  print(set);
+
+  //make a Map using List
+
+  List<dynamic> numbers = [1, 2, 3, 4, 5];
+
+  Map<dynamic, dynamic> nums = Map.fromIterable(numbers,
+      key: (number) => number, value: (number) => number * 2);
+  
+  print(nums);
+  
+  //List to Set
+  
+  List<int> numlist=[2,4,6,8,10,2,4,6,8];
+  print(numlist);
+  
+  Set<int> numset=numlist.toSet();
+  print(numset);
+  
+}
