@@ -1,0 +1,21 @@
+void main() {
+  
+  //count 0 to 10
+  for(int i=0;i<10;i++){
+    print("$i seconds");
+  }
+  
+  //cal the total
+  int sum=0;
+  for(int j=0;j<100;j++){
+    sum+=j;
+  }
+  print("Total is $sum");
+  
+  //check odd or even
+  for(int a=50;a>0;a--){
+    if(a%2==1)print("$a is a odd number");
+    else print("$a is a even number");
+  }
+  
+}
