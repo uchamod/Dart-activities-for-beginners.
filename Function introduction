@@ -1,0 +1,30 @@
+void main() {
+  
+  //function in Dart
+  
+  // return_type functionName(parameter_List){ function body }
+  
+   void funcTest(){
+      
+      print("Hello World"); //body
+    
+  }
+  
+  funcTest();
+  
+  String name1="jack";
+  int age1 = 25;
+  
+   String name2="mark";
+  int age2 = 22;
+  
+  String statement(String name,int age){
+    
+    return "I'm $name and $age years old.";
+    
+  }
+                  //arguments
+  print(statement(name1,age1));
+  
+  print(statement(name2,age2));
+}
