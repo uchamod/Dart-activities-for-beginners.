@@ -1,0 +1,23 @@
+String? getdate() {
+  String? date = DateTime.now().year == 2024 ? "present year" : null;
+
+  String year = date!; //null assertion
+
+  return year;
+}
+
+void main() {
+  //fall back with Null Safety
+  //when the value is null it assign to fallback value
+
+  String? name = null ?? "Unknown";
+
+  String person = name;
+
+  print(person);
+
+  //null assertion operator
+  //use when the value is clearly notnull(!)
+
+  print(getdate());
+}
