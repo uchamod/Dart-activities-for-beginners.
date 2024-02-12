@@ -1,0 +1,35 @@
+//determine the number odd or even
+String checkNum(int number) {
+  if (number % 2 == 0) {
+    return "$number is a even number";
+  } else {
+    return "$number is a odd number";
+  }
+}
+
+/*function that find the shipping cost according to
+  destination country and package weight*/
+
+String price(String country, double baseCost, double weight) {
+  Map<String, double> addCost = {
+    "Germany": 0.0,
+    "London": 10.0,
+    "China": 15.0,
+    "India": 12.0,
+    "Sri Lanka": 18.5
+  };
+
+  if (addCost.containsKey(country)) {
+    dynamic additionlCost = addCost[country];
+    return "The Total cost is ${baseCost + additionlCost + (weight * 2.0)}";
+  } else {
+    return "Invalid Country";
+  }
+}
+
+
+void main() {
+  print(checkNum(100));
+
+  print(price("Sri", 100.0, 3.5));
+}
