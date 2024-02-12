@@ -1,0 +1,33 @@
+//named parameters
+int numbers({int a = 10, int b = 20, int c = 30, int d = 40}) {
+
+  return a + b + c + d;
+
+}
+
+void stat({String name = "Hey there,", int age = 0}) {
+
+  print("$name you are $age years old");
+
+}
+
+//required named parameters
+void statment({required String name, int age = 0}) {
+
+  print("$name you are $age years old");
+
+}
+
+void main() {
+  /*we can't assign arguments to named parameters in normal way 
+    we have to mention the parameter name too.*/
+  print(numbers());
+  print(numbers(a: 100, b: 200, c: 300, d: 400));
+  print(numbers(c: 50, a: 30));
+
+  stat(age: 20);
+
+  //required function
+  //we must assign a value foe required parameter.
+  statment(name: "mark", age: 20);
+}
