@@ -1,0 +1,29 @@
+
+//Acsses modifiers (private)
+
+class Data{
+  
+  int _a=0; //we use '_' to initialize private variables
+  int _b=0;
+  
+  Data({required int aVal,required int bVal}){
+    
+    this._a=aVal;
+    this._b=bVal;
+    
+  }
+  
+  void printData(){
+    
+    print("first value  is $_a and second value is $_b");
+    
+  }
+  
+}
+void main() {
+  
+  Data data=new Data(aVal:10,bVal:20);
+  
+  data.printData();
+  
+}
