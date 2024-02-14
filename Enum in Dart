@@ -1,0 +1,34 @@
+//creat a Enum class (use enum key word)
+enum Planets {
+  Earth, //not mendotory to mention datatype
+  Mars,
+  Venus,
+  Mucury,
+}
+
+void main() {
+  print(Planets.Earth);
+  print(Planets.Mars);
+  print(Planets.Mucury.runtimeType);
+
+  Planets planet = Planets.Earth;
+
+  //we can use with swich cases
+  switch (planet) {
+    case Planets.Earth:
+      print("You can live");
+      break;
+    case Planets.Mars:
+      print("prossing");
+      break;
+    case Planets.Mucury:
+      print("You can't live");
+      break;
+    case Planets.Venus:
+      print("You can't live");
+      break;
+    default:
+      print("You have no planet");
+      break;
+  }
+}
