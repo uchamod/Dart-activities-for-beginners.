@@ -1,0 +1,56 @@
+ //Classes and objects in Dart
+class Person {
+  
+  //difine fields
+  String name = "";
+  int age = 0;
+  double height = 0.0;
+  
+  //difine methods
+  void discription() {
+    print("I'm $name,I'm $age years old and My heigt is $height");
+  }
+}
+
+class Animal {
+  String type = "";
+  String? name = null ?? "dog";
+  String? country;
+
+  double? price() {
+    if (type == "cat" && country == "USA") {
+      return 10.0;
+    } else if (type == "cat" && country == "China") {
+      return 12.0;
+    } else {
+      return 15.0;
+    }
+  }
+
+  String stat(double? price) {
+    return "Pet type : $type,Pet price : $price";
+  }
+}
+
+void main() {
+  Person person = new Person();
+  person.name = "Sam";
+  person.age = 20;
+  person.height = 165.5;
+
+  person.discription();
+
+  person.name = "jhon";
+  person.age = 22;
+  person.height = 169.5;
+
+  person.discription();
+
+  Animal cat1 = new Animal();
+
+  cat1.type = "cat";
+  cat1.country = "USA";
+
+  double? price = cat1.price();
+  print(cat1.stat(price));
+}
