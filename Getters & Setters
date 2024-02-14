@@ -1,0 +1,26 @@
+class Circle {
+  double _radius = 0;
+
+  //getter
+  double get getRadius {
+    return _radius;
+  }
+
+  //setter
+  void set setRadius(double radius) {
+    if (radius > 0) {
+      _radius = radius;
+    } else {
+      _radius = 0;
+    }
+
+    print("radius is updated");
+  }
+}
+
+void main() {
+  Circle c = new Circle();
+
+  c.setRadius = 10;
+  print(c.getRadius);
+}
