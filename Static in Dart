@@ -1,0 +1,42 @@
+class calc {
+  static int addC = 0;
+  static int subC = 0;
+  static int mulC = 0;
+  static int divC = 0;
+
+  static void sub(dynamic a, dynamic b) {
+    subC++;
+    print(a - b);
+  }
+
+  static void add(dynamic a, dynamic b) {
+    addC++;
+    print(a + b);
+  }
+
+  static void mul(dynamic a, dynamic b) {
+    mulC++;
+    print(a * b);
+  }
+
+  static void div({dynamic a, dynamic b = 1}) {
+    if (b > 0) {
+      divC++;
+      print(a / b);
+    } else {
+      print("can't divided by zero");
+    }
+  }
+}
+
+void main() {
+  calc.add(10, 20.5);
+  calc.sub(1234, 678.9);
+  calc.mul(21, 7);
+  calc.div(b: 12.5, a: 153.5);
+
+  print(calc.addC);
+  print(calc.subC);
+  print(calc.mulC);
+  print(calc.divC);
+}
