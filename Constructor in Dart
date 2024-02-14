@@ -1,0 +1,38 @@
+
+class Animal {
+  String type = "";
+  String? name = null ?? "dog";
+  String? country;
+  
+  //Constructor method 
+  Animal(String ? animalName,String ? animalCountry){
+    
+    this.name=animalName;
+    this.country=animalCountry;
+    
+  }
+
+  double? price() {
+    if (type == "cat" && country == "USA") {
+      return 10.0;
+    } else if (type == "cat" && country == "China") {
+      return 12.0;
+    } else {
+      return 15.0;
+    }
+  }
+
+  String stat(double? price) {
+    return "Pet type : $type,Pet price : $price";
+  }
+}
+
+void main() {
+  
+  Animal animal=new Animal("cat",null);//possitinol arguments
+  
+  double ? price=animal.price();
+  print(animal.stat(price));
+  
+  
+}
