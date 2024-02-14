@@ -1,0 +1,47 @@
+class Car {
+  String? brand;
+  int? year;
+  String? model;
+  double _fuelLevel=0;
+ 
+  //we can build constructor giving taking the data directly
+  Car(this.brand, this.model, this.year, double fuel) {
+    this._fuelLevel = fuel;
+  }
+
+  double? getFuelLevel() {
+    double? fuel = _fuelLevel;
+    return fuel;
+  }
+
+  void displayInfo() {
+    print("Brand:$brand Model:$model year:$year Fuel Level:$_fuelLevel");
+  }
+
+  void refuel(double fuel) {
+    if (fuel <= (30 - _fuelLevel)){
+      _fuelLevel+=fuel;
+      print("refuel is succss");
+    }else{
+      print(
+          "refuel is unable You have not enough space(remain:${100 - _fuelLevel})");
+    }
+  }
+
+  void drive(double distance) {
+    if (distance < (_fuelLevel * 25))
+      print("fuel is enough to the journey");
+    else
+      print(
+          "fuel is not enough to the journey remain:${_fuelLevel} asspected:${distance / 25}");
+  }
+}
+
+void main() {
+  
+  Car car=new Car("masarati","mc20",2021,10);
+  car.displayInfo();
+  car.refuel(10);
+  car.drive(500);
+  
+}
